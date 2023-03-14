@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll("[data-tab-button]");
+  const questions = document.querySelectorAll("[data-faq-question]");
 
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function (botao) {
@@ -11,7 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
       botao.target.classList.add("shows__tabs__button--is-active");
     });
   }
+
+  for (let i = 0; i < questions.length; i++) {
+    questions[i].addEventListener("click", ToggleFaqQuestion);
+  }
 });
+
+function ToggleFaqQuestion(element) {
+  const classe = "faq__questions__item--is-open";
+  console.log(element);
+  const bigElement = element.target.parentNode;
+
+  bigElement.classList.toggle(classe);
+}
 
 function toggleActiveButton() {
   const buttons = document.querySelectorAll("[data-tab-button]");
