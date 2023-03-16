@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <h1 class="header__logo">
+        <h1 cla ss="header__logo">
           <img src="../dist/images/disneyplus.svg" alt="Disney+" />
         </h1>
         <ul class="header__links">
@@ -225,7 +225,13 @@
       </div>
     </section>
     <section class="image-text-section image-text-section--image--full-width">
-      <img src="../dist/images/fundo_rei_leao.png" alt="Fundo Rei Leão" />
+      <picture>
+        <source
+          media="(max-width:768px)"
+          srcset="../dist/images/fundo_rei_leao_celular.png"
+        />
+        <img src="../dist/images/fundo_rei_leao.png" alt="Fundo Rei Leão" />
+      </picture>
       <div
         class="image-text-section__text_container image-text-section--image--full-width__text_container"
       >
