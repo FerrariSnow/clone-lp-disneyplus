@@ -4,11 +4,11 @@
   padding: 5.6vw;
   min-height: 80vh;
   text-align: center;
-  background-image: url(./images/hero_desktop.jpeg);
+  background-image: url(../images/hero_desktop.jpeg);
   background-size: cover;
 
   @media (max-width: 768px) {
-    background-image: url(./images/hero_celular.jpeg);
+    background-image: url(../images/hero_celular.jpeg);
     padding-top: calc(50vw + 25px);
     background-size: contain;
     background-repeat: no-repeat;
